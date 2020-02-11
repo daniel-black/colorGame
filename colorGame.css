@@ -1,5 +1,7 @@
 body {
 	background-color: #232323;
+	margin: 0;
+	font-family: "Monserrat", "Avenir";
 }
 
 .square {
@@ -8,6 +10,11 @@ body {
 	margin: 1.66%;
 	background: purple;
 	float: left;
+	border-radius: 15%;
+}
+
+#colorDisplay {
+	font-size: 200%;
 }
 
 #container {
@@ -21,10 +28,42 @@ body {
 	text-align: center;
 }
 
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
 h1 {
+	text-align: center;
 	color: white;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
 }
 
 .selected {
-	background-color: blue;
+	color: white;
+	background-color: steelblue;
+}
+
+button {
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	/* any time a property changes on any button (in this case, just color and background)
+	this change should take 0.3s */
+}
+
+button:hover{
+	color: white;
+	background-color: steelblue;
 }
